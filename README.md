@@ -303,7 +303,7 @@ and securing applications and services.
       }
    ```
 
-# Web Services Test
+# Tools Test
 <table align="center">
     <tr>
         <th>Consul</th>
@@ -327,3 +327,28 @@ and securing applications and services.
         <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/be7dded9-c432-411e-81dd-8730e289fa41"/></td>
     </tr>
 </table>
+
+# Web Service Api Documentation
+<table align="center">
+    <tr>
+        <th>Reservations MS</th>
+        <th>Resources MS</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/deffe243-8a91-4639-893d-6e289c575880"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/1f28f72a-2d31-4b2f-bde5-716383c57424"/></td>
+    </tr>
+</table>
+
+# Data Bases
+<table align="center">
+    <tr>
+        <th>Reservations MS DataBase</th>
+        <th>Resources MS Database</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/d002ca5f-9044-4611-a8a4-a5ad6d613424"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/7ac6c1a1-8f37-4f3c-98fd-e04c02e6608b"/></td>
+    </tr>
+</table>
+
