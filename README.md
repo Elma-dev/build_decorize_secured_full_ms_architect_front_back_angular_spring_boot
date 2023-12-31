@@ -352,3 +352,39 @@ and securing applications and services.
     </tr>
 </table>
 
+# Front end Tests (Angular)
+<table align="center">
+    <tr>
+        <th>Authentication Page</th>
+        <th>Home Page</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/0d6c284f-076b-4764-becb-282f5ac9953d"/></td>
+         <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/ec030225-5fe5-4768-b063-1ee7f844b6c4"/></td>
+    </tr>
+</table>
+
+
+<table align="center">
+    <tr>
+        <th>Resource Page</th>
+        <th>Reservation Page</th>
+        <th>Person Page</th>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/b41dbf4f-28d5-4f4f-80a1-8137c5f8c021"/></td>
+      <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/a5d34c5c-7b94-48c4-b9eb-68a7c3e3bf34"/></td>
+      <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/0de23cc9-95a3-420c-994b-3b8d859c2f45"/></td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <th>Violations Page</th>
+    </tr>
+    <tr>
+        <td><img src="images/violationPages.jpg"/></td>
+    </tr>
+</table>
+
+
