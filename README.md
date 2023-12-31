@@ -364,7 +364,6 @@ and securing applications and services.
     </tr>
 </table>
 
-
 <table align="center">
     <tr>
         <th>Resource Page</th>
@@ -380,10 +379,11 @@ and securing applications and services.
 
 <table align="center">
     <tr>
-        <th>Violations Page</th>
+        <th colspan=2>Operations</th>
     </tr>
     <tr>
-        <td><img src="images/violationPages.jpg"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/d096f227-34be-49ef-a41e-3c3fe45b8d46"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/6a312572-1c4d-4584-a5c4-fdc6bbdb2baf"/></td>
     </tr>
 </table>
 
