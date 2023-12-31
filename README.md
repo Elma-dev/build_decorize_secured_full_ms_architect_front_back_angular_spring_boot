@@ -73,19 +73,19 @@ to use docker compose file with this command:
 The utility of Consul extends beyond mere service discovery; it encompasses various facets of distributed systems
 management,such as health checking, key-value storage, and distributed locking.
 ```
-Installation Of Consul:
+* Installation Of **Consul**:
 ```
 brew install consul
 ```
-Run Consul in dev mode:
+* Run **Consul** in dev mode:
 ```
 consul agent -dev
 ```
-Join Consul Ui:
+* Join **Consul** Ui:
 ```
 http://localhost:8500
 ```
-Use Consul with Micro Services as a Discovery:
+* Use Consul with Micro Services as a Discovery:
   1. you should to add ```consul discovery```dipendency.
   2. add ```@EnableConsulDiscovry``` to the main of any ms.
 ### Vault
@@ -93,4 +93,23 @@ Use Consul with Micro Services as a Discovery:
 In the realm of distributed systems and cloud-native applications, the management of sensitive information—such as
 API keys, passwords, and encryption keys—is a critical concern. Vault addresses this challenge by offering a centralized
 platform for storing, managing, and accessing secrets securely.
+```
+* Installation Of **Vault**:
+```
+brew install vault
+```
+* Run **Vault** in dev mode:
+```
+Vault server -dev
+```
+* Join **Vault** Ui:
+```
+http://localhost:8200
+```
+* To use vault in your application you should to add this params
+```
+spring.config.import=optional:consul:,vault:
+spring.cloud.vault.token=yourToken
+spring.cloud.vault.scheme=http
+spring.cloud.vault.kv.enabled=true
 ```
