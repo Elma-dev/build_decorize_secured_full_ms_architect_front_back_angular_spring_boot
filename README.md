@@ -113,3 +113,19 @@ spring.cloud.vault.token=yourToken
 spring.cloud.vault.scheme=http
 spring.cloud.vault.kv.enabled=true
 ```
+## Keycloak
+```
+Keycloak is an open-source identity and access management (IAM) solution developed by Red Hat. It provides a
+comprehensive set of capabilities for managing user identities, enforcing authentication and authorization policies,
+and securing applications and services. 
+```
+2. Download Kycloak From Keycloak Website (binary version)
+1. in keyclaok folder you can run keycloak with this command:
+  ```
+  bin/kc.sh start-dev
+  ```
+3. join keycloak ui
+   ```
+   http://localhost:8080
+   ```
+3. create Application Realm from keycloak ui 
