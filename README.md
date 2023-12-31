@@ -302,3 +302,28 @@ and securing applications and services.
           }
       }
    ```
+
+# Web Services Test
+<table align="center">
+    <tr>
+        <th>Consul</th>
+        <th>Keycloak</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/c875291e-d238-43b0-9f33-af3e1fb6e641"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/bc0c3189-598b-46e0-82bc-17fb69f6f88c"/></td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <th>Security Test: Get Token</th>
+        <th>Token Decoder </th>
+        <th>Test Token</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/8f5f024b-c467-43c6-9c4c-add9b20d5e9a)https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/8f5f024b-c467-43c6-9c4c-add9b20d5e9a"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/5220a41f-cb1e-4e0a-8791-86f0a3ed4cea"/></td>
+        <td><img src="https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/be7dded9-c432-411e-81dd-8730e289fa41"/></td>
+    </tr>
+</table>
