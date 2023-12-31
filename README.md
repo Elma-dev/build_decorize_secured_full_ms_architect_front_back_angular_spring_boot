@@ -152,4 +152,107 @@ and securing applications and services.
 ## Diagram Class
 ![Screen Shot 2023-12-31 at 01 24 54](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/e48f5c63-28d8-40b5-b67c-5100611db25e)
 
+# Services Tree
+## Configuration Service
+```
+├── dockerfile
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── dev
+    │   │       └── elma
+    │   │           └── configuration_service
+    │   │               └── ConfigurationServiceApplication.java
+    │   └── resources
+    │       └── application.properties
+```
+## Gateway service
+```
+.
+├── dockerfile
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── dev
+    │   │       └── elma
+    │   │           └── gateway_service
+    │   │               └── GatewayServiceApplication.java
+    │   └── resources
+    │       └── application.properties
+```
 
+## Resource service
+```
+.
+├── Dockerfile
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── dev
+    │   │       └── elma
+    │   │           └── ressource_service
+    │   │               ├── Dtos
+    │   │               │   └── ResourceClient.java
+    │   │               ├── Mappers
+    │   │               │   └── ResourceMappers.java
+    │   │               ├── Repositories
+    │   │               │   └── ResourceRepo.java
+    │   │               ├── ResourceServiceApplication.java
+    │   │               ├── entities
+    │   │               │   └── Resource.java
+    │   │               ├── enums
+    │   │               │   └── ResourceType.java
+    │   │               ├── security
+    │   │               │   └── SecurityConfig.java
+    │   │               └── web
+    │   │                   └── ResourceRestController.java
+    │   └── resources
+    │       └── application.properties
+```
+## Reservation service
+```
+.
+├── Dockerfile
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── dev
+    │   │       └── elma
+    │   │           └── reservationservice
+    │   │               ├── Dtos
+    │   │               │   ├── PersonClient.java
+    │   │               │   └── ReservationClient.java
+    │   │               ├── ReservationServiceApplication.java
+    │   │               ├── entities
+    │   │               │   ├── Person.java
+    │   │               │   └── Reservation.java
+    │   │               ├── feign
+    │   │               │   └── ResourceClient.java
+    │   │               ├── mappers
+    │   │               │   └── ReservationMapper.java
+    │   │               ├── models
+    │   │               │   └── Resource.java
+    │   │               ├── repositories
+    │   │               │   ├── PersonRepo.java
+    │   │               │   └── ReservationRepo.java
+    │   │               ├── security
+    │   │               │   ├── FeignAdapter.java
+    │   │               │   └── SecurityConfig.java
+    │   │               └── web
+    │   │                   ├── PersonRestController.java
+    │   │                   └── ReservationRestController.java
+    │   └── resources
+    │       └── application.properties
+```
