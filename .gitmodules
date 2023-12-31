@@ -1,0 +1,6 @@
+[submodule "configs_architect"]
+	path = configs_architect
+	url = https://github.com/Elma-dev/configs_architect.git
+[submodule "front_app_angular"]
+	path = front_app_angular
+	url = https://github.com/Elma-dev/front_app_angular.git
