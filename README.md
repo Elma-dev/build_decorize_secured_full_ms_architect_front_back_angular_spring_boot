@@ -128,4 +128,13 @@ and securing applications and services.
    ```
    http://localhost:8080
    ```
-3. create Application Realm from keycloak ui 
+3. create Application Realm/Clients/Users/Roles from keycloak ui
+   ![‎Keycloak ‎002](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/fe9da4e1-b900-4700-817d-a0849d4c0fce)
+   ![‎Keycloak ‎001](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/e9087643-2e7f-4039-8ead-9391f17588f5)
+   ![‎Keycloak ‎003](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/ceec0b5e-1818-4040-b15d-d7374ae144d5)
+   ![‎Keycloak ‎004](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/c72baf22-8ff1-4cfe-a27e-a94b1f916560)
+   ![‎Keycloak ‎005](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/91208971-0061-4aa6-8f32-8266e51464dc)
+
+
+
+
