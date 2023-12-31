@@ -256,3 +256,49 @@ and securing applications and services.
     │   └── resources
     │       └── application.properties
 ```
+# Problems: Solutions
+1. gateway cors
+   ```yaml
+   spring:
+    cloud:
+      gateway:
+        globalcors:
+          corsConfigurations:
+            '[/**]':
+              allowedOrigins: "*"
+              allowedHeaders: "*"
+              allowedMethods:
+                - GET
+                - POST
+                - PUT
+                - DELETE
+                - OPTION
+   
+   ```
+3. server spring security cors
+   ```java
+   @Bean
+    CorsConfigurationSource corsConfigurationSource() {
+    	CorsConfiguration configuration = new CorsConfiguration();
+    	configuration.setAllowedOrigins(Arrays.asList("https://example.com"));
+    	configuration.setAllowedMethods(Arrays.asList("GET","POST"));
+    	UrlBasedCorsConfigurationSource source = 
+    				new UrlBasedCorsConfigurationSource();
+    	source.registerCorsConfiguration("/**", configuration);
+    	return source;
+    }
+   ```
+5. open feign adapter
+   ```java
+     @Component
+      public class FeignInterceptor implements RequestInterceptor {
+          @Override
+          public void apply(RequestTemplate requestTemplate) {
+              SecurityContext context = SecurityContextHolder.getContext();
+              JwtAuthenticationToken authentication = 
+      					(JwtAuthenticationToken) context.getAuthentication();
+              String tokenValue = authentication.getToken().getTokenValue();
+              requestTemplate.header("Authorization","Bearer "+tokenValue);
+          }
+      }
+   ```
