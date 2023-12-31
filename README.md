@@ -387,4 +387,16 @@ and securing applications and services.
     </tr>
 </table>
 
-
+# Decorize Full
+1. Create jar files of each micro services
+1. Create DockerFile in each model (fronted&backend)
+2. Test
+3. Create docker compose file
+4. Test
+   ```
+     docker compose up -d --build
+   ```
+# What I Learn
+```
+  In this project i learn everthing i need to create and deploy micro service architec from zero to hero 🤪
+```
