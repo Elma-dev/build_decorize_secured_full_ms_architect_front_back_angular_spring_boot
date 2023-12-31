@@ -1,0 +1,136 @@
+services:
+  discovery-service:
+    build: ./backend/discovery-service
+    container_name: discovery-service
+    restart: always
+    ports:
+      - '8761:8761'
+    expose:
+      - '8761'
+
+  configuration-service:
+    build: ./backend/configuration-service
+    container_name: config-service
+    restart: always
+    ports:
+      - '9999:9999'
+    expose:
+      - '9999'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka
+    depends_on:
+      - discovery-service
+
+  gateway-service:
+    build: ./backend/gateway-service
+    container_name: gateway-service
+    restart: always
+    ports:
+      - '8888:8888'
+    expose:
+      - '8888'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka
+      - CONFIG_SERVER=http://configuration-service:9999
+    depends_on:
+      - configuration-service
+
+  # postgres-keycloak-db ---------------------------
+  postgres-keycloak-db:
+    image: postgres
+    container_name: postgres-keycloak-db
+    volumes:
+      - postgres_keycloak_data_ex:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: keycloak_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    restart: always
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
+    healthcheck:
+      test: "exit 0"
+
+  # pgadmin-keycloak ---------------------------
+  pgadmin-keycloak:
+    image: dpage/pgadmin4
+    container_name: pgadmin-keycloak
+    restart: always
+    ports:
+      - "44:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - pgadmin_keycloak_data_ex:/var/lib/pgadmin
+
+  # keycloak-service ---------------------------
+  keycloak-service:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak-service
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres-keycloak-db:5432/keycloak_db
+      KC_DB_USERNAME: admin
+      KC_DB_PASSWORD: admin
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_HTTP_ENABLED: "true"
+      KC_HOSTNAME_STRICT_HTTPS: "false"
+    command:
+      - start-dev
+    restart: always
+    ports:
+      - '8080:8080'
+    expose:
+      - '8080'
+    depends_on:
+      - postgres-keycloak-db
+
+  resource-service:
+    build: ./backend/resource-service
+    container_name: resource-service
+    restart: always
+    ports:
+      - '8081:8081'
+    expose:
+      - '8081'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka
+      - CONFIG_SERVER=http://configuration-service:9999
+      - ISSUER_URI=http://localhost:8080/realms/exam-realm
+      - JWK_SET_URI=http://keycloak-service:8080/realms/exam-realm/protocol/openid-connect/certs
+    depends_on:
+      - configuration-service
+      - keycloak-service
+
+  reservation-service:
+    build: ./backend/reservation-service
+    container_name: reservation-service
+    restart: always
+    ports:
+      - '8082:8082'
+    expose:
+      - '8082'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka
+      - CONFIG_SERVER=http://configuration-service:9999
+      - ISSUER_URI=http://localhost:8080/realms/exam-realm
+      - JWK_SET_URI=http://keycloak-service:8080/realms/exam-realm/protocol/openid-connect/certs
+    depends_on:
+      - resource-service
+
+  angular-fronend:
+    build: ./frontend/angular-frontend
+    container_name: angular-frontend
+    restart: always
+    ports:
+      - '8083:80'
+    expose:
+      - '8083'
+
+volumes:
+  pgadmin_keycloak_data_ex:
+  postgres_keycloak_data_ex:
