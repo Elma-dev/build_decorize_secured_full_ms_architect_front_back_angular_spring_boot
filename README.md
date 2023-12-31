@@ -60,8 +60,8 @@ to use docker compose file with this command:
         <th>Configuraion</th>
     </tr>
     <tr>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/0fb916ac00e878670dec15f81df851d5f1ec9340/Immatriculation_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/d69ccf2cc6d23ee1d80212006e9dc7b5a86e6b44/RadarSimulation/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/Build_Decorize_MS_Architect/blob/main/reservation-service/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/Build_Decorize_MS_Architect/blob/main/ressource_service/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
         <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/3f7db6a29bbc6196781d8276c4fa50a8dbdcdfe1/Infractin_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
-        <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/ba99886a1363a60883e0777ec16314e44aab1a10/Gateway_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
+        <td><a href="https://github.com/Elma-dev/Build_Decorize_MS_Architect/blob/main/configuration_service/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
 </table>
