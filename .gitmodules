@@ -4,3 +4,6 @@
 [submodule "front_app_angular"]
 	path = front_app_angular
 	url = https://github.com/Elma-dev/front_app_angular.git
+[submodule "Build_Decorize_MS_Architect"]
+	path = Build_Decorize_MS_Architect
+	url = https://github.com/Elma-dev/Build_Decorize_MS_Architect.git
