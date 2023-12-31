@@ -2,7 +2,8 @@
 # Getting Started
 ## 📚Prerequisite
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![SpringBoot](https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?style=for-the-badge&logo=Spring-Boot&logoColor=white)
+![SpringSecurity](https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=for-the-badge&logo=Spring-Security&logoColor=white)
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
@@ -16,6 +17,37 @@
 ![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-F8DC75.svg?style=for-the-badge&logo=Apache-Tomcat&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=Git&logoColor=white)
 ![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
+
+
 ```
+
 * Spring Cloud
 * H2DataBase
+* Docker Compose
+* Keycloak
+
+```
+
+## Installation
+1. Clone this repo
+```
+git clon <!--links of repo-->
+```
+2. Install all the dependencies
+```
+npm install
+```
+4. run all services (after install maven dependencies in intellijIDE)
+5. run front project
+```
+ng serve
+```
+## Run Project From Docker 
+```
+To Run This Project With Docker You should to have docker engine in your machine and just trying
+to use docker compose file with this command:
+1. You should to be inside of this project in your machine (change direcotory to docker compose file directory)
+  $ cd directoryFile
+2. run docker compose
+  $ docker compose up -d --build
+```
