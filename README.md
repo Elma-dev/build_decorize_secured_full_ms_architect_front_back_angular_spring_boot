@@ -65,3 +65,32 @@ to use docker compose file with this command:
         <td><a href="https://github.com/Elma-dev/ManageViolation_APP_Spring_MS/blob/3f7db6a29bbc6196781d8276c4fa50a8dbdcdfe1/Infractin_MS/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
         <td><a href="https://github.com/Elma-dev/Build_Decorize_MS_Architect/blob/main/configuration_service/pom.xml"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg"/></a></td>
 </table>
+
+## Vault & Consul Installation
+![image](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/bfd9db00-c0a3-4701-b43f-9cb99178d011)
+### Consul
+```
+The utility of Consul extends beyond mere service discovery; it encompasses various facets of distributed systems
+management,such as health checking, key-value storage, and distributed locking.
+```
+Installation Of Consul:
+```
+brew install consul
+```
+Run Consul in dev mode:
+```
+consul agent -dev
+```
+Join Consul Ui:
+```
+http://localhost:8500
+```
+Use Consul with Micro Services as a Discovery:
+  1. you should to add ```consul discovery```dipendency.
+  2. add ```@EnableConsulDiscovry``` to the main of any ms.
+### Vault
+```
+In the realm of distributed systems and cloud-native applications, the management of sensitive information—such as
+API keys, passwords, and encryption keys—is a critical concern. Vault addresses this challenge by offering a centralized
+platform for storing, managing, and accessing secrets securely.
+```
