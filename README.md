@@ -149,4 +149,7 @@ and securing applications and services.
     - User-friendly interfaces that facilitate ease of use.
 
   ![image](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/d5565b0c-43b1-4d54-9b9f-27885f7765db)
+## Diagram Class
+![Screen Shot 2023-12-31 at 01 24 54](https://github.com/Elma-dev/build_decorize_secured_full_ms_architect_front_back_angular_spring_boot/assets/67378945/e48f5c63-28d8-40b5-b67c-5100611db25e)
+
 
